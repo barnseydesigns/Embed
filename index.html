@@ -3,54 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gift-to-Mob Chaos Overlay</title>
+  <title>Gift-to-Mob Chaos Grid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: rgba(0, 0, 0, 0.7);
+      font-family: 'Press Start 2P', monospace;
+      background: transparent;
       color: #fff;
     }
     .container {
       padding: 20px;
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border: 4px solid #4CAF50;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #4CAF50;
     }
     h1 {
       text-align: center;
-      font-size: 28px;
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #FFD700;
+      text-shadow: 2px 2px #000;
+    }
+    .alert {
+      text-align: center;
+      font-size: 14px;
       margin-bottom: 20px;
-      color: #ffcc00;
+      color: #FF4444;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 8px;
+      border: 2px dashed #FF4444;
+      border-radius: 8px;
     }
-    .row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 12px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
     }
-    .row img {
-      width: 40px;
-      height: 40px;
-      margin-right: 12px;
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px #FFD700;
+    }
+    .card img {
+      width: 48px;
+      height: 48px;
+      margin: 6px;
+      border-radius: 4px;
     }
     .label {
-      font-size: 18px;
+      font-size: 12px;
+      margin-top: 8px;
+      color: #ADFF2F;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🎁 GIFT TO SPAWN MOBS 🧟</h1>
+    <h1>🎁 GIFT TO SPAWN MOBS 🧟‍♂️</h1>
+    <div class="alert">**🔔(Likes) will summon a Zombie Horde!**</div>
+    <div class="grid">
 
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6e/Zombie_JE2_BE2.png" alt="Zombie"/><div class="label">Zombie — Rose</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3e/Skeleton_JE2_BE2.png" alt="Skeleton"/><div class="label">Skeleton — TikTok</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6e/Spider_JE2_BE2.png" alt="Spider"/><div class="label">Spider — Finger Heart</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3c/Witch_JE2_BE2.png" alt="Witch"/><div class="label">Witch — Perfume</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3e/Snow_Golem_JE2_BE2.png" alt="Snow Golem"/><div class="label">Snow Golem — Ice Cream Cone</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7e/Creeper_JE2_BE2.png" alt="Creeper"/><div class="label">Creeper — Love Balloon</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3e/Iron_Golem_JE2_BE2.png" alt="Iron Golem"/><div class="label">Iron Golem + Horde — Galaxy</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2e/Pillager_JE2_BE2.png" alt="Pillager"/><div class="label">Pillager + Ravager — Lion</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2e/Wither_JE2_BE2.png" alt="Wither"/><div class="label">Wither + Blaze — Dragon</div></div>
-    <div class="row"><img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2e/Evoker_JE2_BE2.png" alt="Evoker"/><div class="label">Wither + Evoker + Horde — Universe</div></div>
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f339.png" alt="Rose"/>
+        <div class="label">Rose → Zombie</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f3b5.png" alt="TikTok"/>
+        <div class="label">TikTok → Skeleton</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1faf6.png" alt="Finger Heart"/>
+        <div class="label">Finger Heart → Spider</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f9b4.png" alt="Perfume"/>
+        <div class="label">Perfume → Witch</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f368.png" alt="Ice Cream"/>
+        <div class="label">Ice Cream → Snow Golem</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f49d.png" alt="Love Balloon"/>
+        <div class="label">Love Balloon → Creeper</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f30c.png" alt="Galaxy"/>
+        <div class="label">Galaxy → Iron Golem + Horde</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f981.png" alt="Lion"/>
+        <div class="label">Lion → Pillager + Ravager</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f409.png" alt="Dragon"/>
+        <div class="label">Dragon → Wither + Blaze</div>
+      </div>
+
+      <div class="card">
+        <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f30d.png" alt="Universe"/>
+        <div class="label">Universe → Wither + Evoker + Horde</div>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
